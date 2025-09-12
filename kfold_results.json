@@ -1,0 +1,604 @@
+{
+  "configuration": {
+    "MODEL_NAME": "emilyalsentzer/Bio_ClinicalBERT",
+    "MAX_LENGTH": 384,
+    "BATCH_SIZE": 3,
+    "ACCUMULATION_STEPS": 12,
+    "LEARNING_RATE": 2e-05,
+    "EPOCHS_PER_FOLD": 15,
+    "K_FOLDS": 5,
+    "WARMUP_RATIO": 0.08,
+    "WEIGHT_DECAY": 0.02,
+    "DROPOUT": 0.2,
+    "GRADIENT_CLIP": 1.0,
+    "PATIENCE": 7,
+    "MIN_SAMPLES_PER_CLASS": 30,
+    "FOCAL_LOSS_ALPHA": 0.3,
+    "FOCAL_LOSS_GAMMA": 2.5,
+    "USE_WEIGHTED_SAMPLING": true,
+    "LABEL_SMOOTHING": 0.05,
+    "USE_MIXED_PRECISION": true,
+    "MIN_LR": 5e-08,
+    "USE_GRADUAL_UNFREEZING": true,
+    "SAVE_CHECKPOINTS": true,
+    "AUGMENTATION_PROB": 0.4
+  },
+  "device_info": {
+    "device": "cuda",
+    "gpu_name": "Tesla T4",
+    "cuda_version": "12.6"
+  },
+  "results": {
+    "fold_accuracies": [
+      0.629,
+      0.631,
+      0.645,
+      0.631,
+      0.64
+    ],
+    "fold_f1_scores": [
+      0.6360320656730708,
+      0.635725193140297,
+      0.6463556738138128,
+      0.6309357710195835,
+      0.6404050569656863
+    ],
+    "fold_precisions": [
+      0.657144047958687,
+      0.6590875766035292,
+      0.655550947662248,
+      0.6448507859189789,
+      0.6577845215697987
+    ],
+    "fold_recalls": [
+      0.629,
+      0.631,
+      0.645,
+      0.631,
+      0.64
+    ],
+    "fold_losses": [
+      0.17443697999369542,
+      0.17218897538677885,
+      0.16773727554901124,
+      0.17471671787238385,
+      0.17005206739166082
+    ],
+    "fold_val_losses": [],
+    "training_times": [
+      1638.7238128185272,
+      1688.2161965370178,
+      1730.187052488327,
+      1653.4838557243347,
+      1714.120478630066
+    ],
+    "best_epochs": [
+      11,
+      12,
+      10,
+      12,
+      12
+    ],
+    "confusion_matrices": [
+      [
+        [
+          117,
+          18,
+          14,
+          4,
+          4,
+          8
+        ],
+        [
+          21,
+          92,
+          18,
+          4,
+          3,
+          27
+        ],
+        [
+          24,
+          30,
+          97,
+          3,
+          6,
+          12
+        ],
+        [
+          20,
+          18,
+          1,
+          112,
+          2,
+          13
+        ],
+        [
+          12,
+          26,
+          1,
+          6,
+          113,
+          9
+        ],
+        [
+          18,
+          28,
+          4,
+          14,
+          3,
+          98
+        ]
+      ],
+      [
+        [
+          117,
+          16,
+          13,
+          11,
+          2,
+          6
+        ],
+        [
+          26,
+          93,
+          14,
+          8,
+          6,
+          18
+        ],
+        [
+          33,
+          28,
+          89,
+          16,
+          2,
+          4
+        ],
+        [
+          23,
+          13,
+          3,
+          120,
+          1,
+          6
+        ],
+        [
+          18,
+          17,
+          0,
+          12,
+          115,
+          5
+        ],
+        [
+          22,
+          23,
+          6,
+          11,
+          6,
+          97
+        ]
+      ],
+      [
+        [
+          112,
+          15,
+          9,
+          16,
+          6,
+          7
+        ],
+        [
+          15,
+          87,
+          10,
+          9,
+          20,
+          24
+        ],
+        [
+          17,
+          28,
+          101,
+          10,
+          7,
+          10
+        ],
+        [
+          11,
+          12,
+          1,
+          114,
+          8,
+          19
+        ],
+        [
+          12,
+          19,
+          3,
+          11,
+          111,
+          11
+        ],
+        [
+          14,
+          17,
+          3,
+          8,
+          3,
+          120
+        ]
+      ],
+      [
+        [
+          104,
+          12,
+          24,
+          12,
+          0,
+          13
+        ],
+        [
+          10,
+          79,
+          15,
+          17,
+          11,
+          33
+        ],
+        [
+          13,
+          19,
+          106,
+          16,
+          3,
+          15
+        ],
+        [
+          3,
+          10,
+          4,
+          132,
+          2,
+          14
+        ],
+        [
+          11,
+          9,
+          6,
+          20,
+          102,
+          19
+        ],
+        [
+          7,
+          15,
+          2,
+          27,
+          7,
+          108
+        ]
+      ],
+      [
+        [
+          124,
+          11,
+          11,
+          14,
+          1,
+          4
+        ],
+        [
+          15,
+          78,
+          11,
+          29,
+          9,
+          22
+        ],
+        [
+          25,
+          26,
+          102,
+          12,
+          4,
+          3
+        ],
+        [
+          11,
+          11,
+          3,
+          130,
+          3,
+          8
+        ],
+        [
+          15,
+          15,
+          2,
+          19,
+          106,
+          10
+        ],
+        [
+          20,
+          18,
+          4,
+          19,
+          5,
+          100
+        ]
+      ]
+    ],
+    "class_reports": [
+      {
+        "Bariatric Specialist": {
+          "precision": 0.5518867924528302,
+          "recall": 0.7090909090909091,
+          "f1-score": 0.6206896551724138,
+          "support": 165.0
+        },
+        "Cardiologist": {
+          "precision": 0.4339622641509434,
+          "recall": 0.5575757575757576,
+          "f1-score": 0.4880636604774536,
+          "support": 165.0
+        },
+        "Endocrinologist": {
+          "precision": 0.7185185185185186,
+          "recall": 0.563953488372093,
+          "f1-score": 0.6319218241042345,
+          "support": 172.0
+        },
+        "Oncologist": {
+          "precision": 0.7832167832167832,
+          "recall": 0.6746987951807228,
+          "f1-score": 0.7249190938511327,
+          "support": 166.0
+        },
+        "Pulmonologist": {
+          "precision": 0.8625954198473282,
+          "recall": 0.6766467065868264,
+          "f1-score": 0.7583892617449665,
+          "support": 167.0
+        },
+        "Rheumatologist": {
+          "precision": 0.5868263473053892,
+          "recall": 0.593939393939394,
+          "f1-score": 0.5903614457831325,
+          "support": 165.0
+        },
+        "accuracy": 0.629,
+        "macro avg": {
+          "precision": 0.6561676875819654,
+          "recall": 0.6293175084576171,
+          "f1-score": 0.6357241568555557,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.657144047958687,
+          "recall": 0.629,
+          "f1-score": 0.6360320656730708,
+          "support": 1000.0
+        }
+      },
+      {
+        "Bariatric Specialist": {
+          "precision": 0.4895397489539749,
+          "recall": 0.7090909090909091,
+          "f1-score": 0.5792079207920792,
+          "support": 165.0
+        },
+        "Cardiologist": {
+          "precision": 0.48947368421052634,
+          "recall": 0.5636363636363636,
+          "f1-score": 0.523943661971831,
+          "support": 165.0
+        },
+        "Endocrinologist": {
+          "precision": 0.712,
+          "recall": 0.5174418604651163,
+          "f1-score": 0.5993265993265994,
+          "support": 172.0
+        },
+        "Oncologist": {
+          "precision": 0.6741573033707865,
+          "recall": 0.7228915662650602,
+          "f1-score": 0.6976744186046512,
+          "support": 166.0
+        },
+        "Pulmonologist": {
+          "precision": 0.8712121212121212,
+          "recall": 0.688622754491018,
+          "f1-score": 0.7692307692307693,
+          "support": 167.0
+        },
+        "Rheumatologist": {
+          "precision": 0.7132352941176471,
+          "recall": 0.5878787878787879,
+          "f1-score": 0.6445182724252492,
+          "support": 165.0
+        },
+        "accuracy": 0.631,
+        "macro avg": {
+          "precision": 0.6582696919775094,
+          "recall": 0.6315937069712092,
+          "f1-score": 0.6356502737251964,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.6590875766035292,
+          "recall": 0.631,
+          "f1-score": 0.635725193140297,
+          "support": 1000.0
+        }
+      },
+      {
+        "Bariatric Specialist": {
+          "precision": 0.6187845303867403,
+          "recall": 0.6787878787878788,
+          "f1-score": 0.6473988439306358,
+          "support": 165.0
+        },
+        "Cardiologist": {
+          "precision": 0.4887640449438202,
+          "recall": 0.5272727272727272,
+          "f1-score": 0.5072886297376094,
+          "support": 165.0
+        },
+        "Endocrinologist": {
+          "precision": 0.7952755905511811,
+          "recall": 0.5838150289017341,
+          "f1-score": 0.6733333333333333,
+          "support": 173.0
+        },
+        "Oncologist": {
+          "precision": 0.6785714285714286,
+          "recall": 0.6909090909090909,
+          "f1-score": 0.6846846846846847,
+          "support": 165.0
+        },
+        "Pulmonologist": {
+          "precision": 0.7161290322580646,
+          "recall": 0.6646706586826348,
+          "f1-score": 0.6894409937888198,
+          "support": 167.0
+        },
+        "Rheumatologist": {
+          "precision": 0.6282722513089005,
+          "recall": 0.7272727272727273,
+          "f1-score": 0.6741573033707865,
+          "support": 165.0
+        },
+        "accuracy": 0.645,
+        "macro avg": {
+          "precision": 0.6542994796700224,
+          "recall": 0.6454546853044656,
+          "f1-score": 0.6460506314743116,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.655550947662248,
+          "recall": 0.645,
+          "f1-score": 0.6463556738138128,
+          "support": 1000.0
+        }
+      },
+      {
+        "Bariatric Specialist": {
+          "precision": 0.7027027027027027,
+          "recall": 0.6303030303030303,
+          "f1-score": 0.6645367412140575,
+          "support": 165.0
+        },
+        "Cardiologist": {
+          "precision": 0.5486111111111112,
+          "recall": 0.47878787878787876,
+          "f1-score": 0.511326860841424,
+          "support": 165.0
+        },
+        "Endocrinologist": {
+          "precision": 0.6751592356687898,
+          "recall": 0.6162790697674418,
+          "f1-score": 0.6443768996960486,
+          "support": 172.0
+        },
+        "Oncologist": {
+          "precision": 0.5892857142857143,
+          "recall": 0.8,
+          "f1-score": 0.6786632390745502,
+          "support": 165.0
+        },
+        "Pulmonologist": {
+          "precision": 0.816,
+          "recall": 0.6107784431137725,
+          "f1-score": 0.6986301369863014,
+          "support": 167.0
+        },
+        "Rheumatologist": {
+          "precision": 0.5346534653465347,
+          "recall": 0.6506024096385542,
+          "f1-score": 0.5869565217391305,
+          "support": 166.0
+        },
+        "accuracy": 0.631,
+        "macro avg": {
+          "precision": 0.6444020381858088,
+          "recall": 0.6311251386017797,
+          "f1-score": 0.630748399925252,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.6448507859189789,
+          "recall": 0.631,
+          "f1-score": 0.6309357710195835,
+          "support": 1000.0
+        }
+      },
+      {
+        "Bariatric Specialist": {
+          "precision": 0.5904761904761905,
+          "recall": 0.7515151515151515,
+          "f1-score": 0.6613333333333333,
+          "support": 165.0
+        },
+        "Cardiologist": {
+          "precision": 0.49056603773584906,
+          "recall": 0.47560975609756095,
+          "f1-score": 0.48297213622291024,
+          "support": 164.0
+        },
+        "Endocrinologist": {
+          "precision": 0.7669172932330827,
+          "recall": 0.5930232558139535,
+          "f1-score": 0.6688524590163935,
+          "support": 172.0
+        },
+        "Oncologist": {
+          "precision": 0.5829596412556054,
+          "recall": 0.7831325301204819,
+          "f1-score": 0.6683804627249358,
+          "support": 166.0
+        },
+        "Pulmonologist": {
+          "precision": 0.828125,
+          "recall": 0.6347305389221557,
+          "f1-score": 0.7186440677966102,
+          "support": 167.0
+        },
+        "Rheumatologist": {
+          "precision": 0.6802721088435374,
+          "recall": 0.6024096385542169,
+          "f1-score": 0.6389776357827476,
+          "support": 166.0
+        },
+        "accuracy": 0.64,
+        "macro avg": {
+          "precision": 0.6565527119240441,
+          "recall": 0.6400701451705867,
+          "f1-score": 0.6398600158128217,
+          "support": 1000.0
+        },
+        "weighted avg": {
+          "precision": 0.6577845215697987,
+          "recall": 0.64,
+          "f1-score": 0.6404050569656863,
+          "support": 1000.0
+        }
+      }
+    ]
+  },
+  "summary_statistics": {
+    "mean_accuracy": 0.6352,
+    "std_accuracy": 0.006209669878504015,
+    "mean_f1": 0.63789075212249,
+    "std_f1": 0.0051863812287402155,
+    "mean_precision": 0.6548835759426483,
+    "std_precision": 0.005143949873294363,
+    "mean_recall": 0.6352,
+    "std_recall": 0.006209669878504015,
+    "total_training_time": 8428.29093503952,
+    "mean_training_time_per_fold": 1684.9462792396546
+  }
+}

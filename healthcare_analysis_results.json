@@ -1,0 +1,458 @@
+{
+  "dataset_overview": {
+    "shape": [
+      55500,
+      15
+    ],
+    "num_records": 55500
+  },
+  "numerical_column_analysis": {
+    "summary_statistics": [
+      {
+        "Age": 55500.0
+      },
+      {
+        "Age": 51.53945945945946
+      },
+      {
+        "Age": 19.602453808514348
+      },
+      {
+        "Age": 13.0
+      },
+      {
+        "Age": 35.0
+      },
+      {
+        "Age": 52.0
+      },
+      {
+        "Age": 68.0
+      },
+      {
+        "Age": 89.0
+      }
+    ]
+  },
+  "categorical_column_analysis": {
+    "Gender": {
+      "frequency_table": [
+        {
+          "Count": 27774,
+          "Percentage (%)": 50.04
+        },
+        {
+          "Count": 27726,
+          "Percentage (%)": 49.96
+        }
+      ],
+      "unique_count": 2
+    },
+    "Blood Type": {
+      "frequency_table": [
+        {
+          "Count": 6969,
+          "Percentage (%)": 12.56
+        },
+        {
+          "Count": 6956,
+          "Percentage (%)": 12.53
+        },
+        {
+          "Count": 6947,
+          "Percentage (%)": 12.52
+        },
+        {
+          "Count": 6945,
+          "Percentage (%)": 12.51
+        },
+        {
+          "Count": 6945,
+          "Percentage (%)": 12.51
+        },
+        {
+          "Count": 6944,
+          "Percentage (%)": 12.51
+        },
+        {
+          "Count": 6917,
+          "Percentage (%)": 12.46
+        },
+        {
+          "Count": 6877,
+          "Percentage (%)": 12.39
+        }
+      ],
+      "unique_count": 8
+    },
+    "Medical Condition": {
+      "frequency_table": [
+        {
+          "Count": 9308,
+          "Percentage (%)": 16.77
+        },
+        {
+          "Count": 9304,
+          "Percentage (%)": 16.76
+        },
+        {
+          "Count": 9245,
+          "Percentage (%)": 16.66
+        },
+        {
+          "Count": 9231,
+          "Percentage (%)": 16.63
+        },
+        {
+          "Count": 9227,
+          "Percentage (%)": 16.63
+        },
+        {
+          "Count": 9185,
+          "Percentage (%)": 16.55
+        }
+      ],
+      "unique_count": 6
+    },
+    "Admission Type": {
+      "frequency_table": [
+        {
+          "Count": 18655,
+          "Percentage (%)": 33.61
+        },
+        {
+          "Count": 18576,
+          "Percentage (%)": 33.47
+        },
+        {
+          "Count": 18269,
+          "Percentage (%)": 32.92
+        }
+      ],
+      "unique_count": 3
+    },
+    "Test Results": {
+      "frequency_table": [
+        {
+          "Count": 18627,
+          "Percentage (%)": 33.56
+        },
+        {
+          "Count": 18517,
+          "Percentage (%)": 33.36
+        },
+        {
+          "Count": 18356,
+          "Percentage (%)": 33.07
+        }
+      ],
+      "unique_count": 3
+    },
+    "Medication": {
+      "frequency_table": [
+        {
+          "Count": 11140,
+          "Percentage (%)": 20.07
+        },
+        {
+          "Count": 11127,
+          "Percentage (%)": 20.05
+        },
+        {
+          "Count": 11094,
+          "Percentage (%)": 19.99
+        },
+        {
+          "Count": 11071,
+          "Percentage (%)": 19.95
+        },
+        {
+          "Count": 11068,
+          "Percentage (%)": 19.94
+        }
+      ],
+      "unique_count": 5
+    }
+  },
+  "text_field_analysis": {},
+  "date_field_analysis": {
+    "length_of_stay_statistics": {
+      "count": 55500.0,
+      "mean": 15.50900900900901,
+      "std": 8.65960018652515,
+      "min": 1.0,
+      "25%": 8.0,
+      "50%": 15.0,
+      "75%": 23.0,
+      "max": 30.0
+    },
+    "admission_month_distribution": {
+      "1": 4692,
+      "2": 4255,
+      "3": 4672,
+      "4": 4518,
+      "5": 4599,
+      "6": 4699,
+      "7": 4812,
+      "8": 4832,
+      "9": 4546,
+      "10": 4678,
+      "11": 4548,
+      "12": 4649
+    },
+    "admission_year_distribution": {
+      "2019": 7387,
+      "2020": 11285,
+      "2021": 10931,
+      "2022": 11017,
+      "2023": 11026,
+      "2024": 3854
+    }
+  },
+  "inter_variable_relationships": {
+    "numerical_correlation_matrix": [
+      {
+        "Age": 1.0,
+        "Length of Stay": 0.008220030364583535
+      },
+      {
+        "Age": 0.008220030364583535,
+        "Length of Stay": 1.0
+      }
+    ],
+    "length_of_stay_vs_medical_condition_stats": [
+      {
+        "count": 9308.0,
+        "mean": 15.517404383326172,
+        "std": 8.594503882739636,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 15.0,
+        "75%": 23.0,
+        "max": 30.0
+      },
+      {
+        "count": 9185.0,
+        "mean": 15.69657049537289,
+        "std": 8.717294164421896,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 16.0,
+        "75%": 23.0,
+        "max": 30.0
+      },
+      {
+        "count": 9227.0,
+        "mean": 15.495827462880676,
+        "std": 8.659156272823447,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 15.0,
+        "75%": 23.0,
+        "max": 30.0
+      },
+      {
+        "count": 9304.0,
+        "mean": 15.422936371453138,
+        "std": 8.656565269164606,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 15.0,
+        "75%": 23.0,
+        "max": 30.0
+      },
+      {
+        "count": 9245.0,
+        "mean": 15.458626284478097,
+        "std": 8.638024782895384,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 15.0,
+        "75%": 23.0,
+        "max": 30.0
+      },
+      {
+        "count": 9231.0,
+        "mean": 15.464305059040191,
+        "std": 8.692034363587434,
+        "min": 1.0,
+        "25%": 8.0,
+        "50%": 15.0,
+        "75%": 23.0,
+        "max": 30.0
+      }
+    ],
+    "medical_condition_vs_test_results_crosstab": [
+      {
+        "Abnormal": 34.25010743446498,
+        "Inconclusive": 33.175762784701334,
+        "Normal": 32.574129780833694
+      },
+      {
+        "Abnormal": 32.75993467610234,
+        "Inconclusive": 32.977681001633094,
+        "Normal": 34.26238432226456
+      },
+      {
+        "Abnormal": 33.79213178714642,
+        "Inconclusive": 33.163541779559985,
+        "Normal": 33.0443264332936
+      },
+      {
+        "Abnormal": 34.04987102321582,
+        "Inconclusive": 32.73860705073087,
+        "Normal": 33.21152192605331
+      },
+      {
+        "Abnormal": 32.57977285018929,
+        "Inconclusive": 33.434288804759326,
+        "Normal": 33.98593834505138
+      },
+      {
+        "Abnormal": 33.92915177120572,
+        "Inconclusive": 32.95417614559636,
+        "Normal": 33.11667208319792
+      }
+    ],
+    "age_distribution_vs_medical_condition_stats": [
+      {
+        "count": 9308.0,
+        "mean": 51.56532015470563,
+        "std": 19.62324653549663,
+        "min": 13.0,
+        "25%": 35.0,
+        "50%": 52.0,
+        "75%": 69.0,
+        "max": 89.0
+      },
+      {
+        "count": 9185.0,
+        "mean": 51.575830157866086,
+        "std": 19.711710983612356,
+        "min": 13.0,
+        "25%": 34.0,
+        "50%": 52.0,
+        "75%": 69.0,
+        "max": 89.0
+      },
+      {
+        "count": 9227.0,
+        "mean": 51.558794841226835,
+        "std": 19.6592610205942,
+        "min": 13.0,
+        "25%": 35.0,
+        "50%": 52.0,
+        "75%": 69.0,
+        "max": 89.0
+      },
+      {
+        "count": 9304.0,
+        "mean": 51.55417024935512,
+        "std": 19.425088245282776,
+        "min": 14.0,
+        "25%": 35.0,
+        "50%": 52.0,
+        "75%": 68.0,
+        "max": 89.0
+      },
+      {
+        "count": 9245.0,
+        "mean": 51.741914548404544,
+        "std": 19.64909661660311,
+        "min": 13.0,
+        "25%": 35.0,
+        "50%": 52.0,
+        "75%": 69.0,
+        "max": 89.0
+      },
+      {
+        "count": 9231.0,
+        "mean": 51.240277326400175,
+        "std": 19.548625555091572,
+        "min": 13.0,
+        "25%": 34.0,
+        "50%": 51.0,
+        "75%": 68.0,
+        "max": 89.0
+      }
+    ]
+  },
+  "key_conditional_probabilities": {
+    "abnormal_test_results_given_medical_condition": [
+      {
+        "Probability (%)": 34.25010743446498
+      },
+      {
+        "Probability (%)": 34.04987102321582
+      },
+      {
+        "Probability (%)": 33.92915177120572
+      },
+      {
+        "Probability (%)": 33.79213178714642
+      },
+      {
+        "Probability (%)": 32.75993467610234
+      },
+      {
+        "Probability (%)": 32.57977285018929
+      }
+    ],
+    "emergency_admission_given_medical_condition": [
+      {
+        "Probability (%)": 33.8641533961651
+      },
+      {
+        "Probability (%)": 33.39063171465406
+      },
+      {
+        "Probability (%)": 32.683723462166576
+      },
+      {
+        "Probability (%)": 32.67584263574293
+      },
+      {
+        "Probability (%)": 32.460789616008654
+      },
+      {
+        "Probability (%)": 32.426913155631986
+      }
+    ]
+  },
+  "provider_summary": {
+    "unique_doctor_count": 40341,
+    "unique_hospital_count": 39876,
+    "unique_insurance_count": 5,
+    "top_doctors": {
+      "Michael Smith": 27,
+      "John Smith": 22,
+      "Robert Smith": 22,
+      "James Smith": 20,
+      "Michael Johnson": 20,
+      "David Smith": 19,
+      "Robert Johnson": 19,
+      "Michael Williams": 18,
+      "John Johnson": 17,
+      "Matthew Smith": 17
+    },
+    "top_hospitals": {
+      "LLC Smith": 44,
+      "Ltd Smith": 39,
+      "Johnson PLC": 38,
+      "Smith Ltd": 37,
+      "Smith PLC": 36,
+      "Smith Group": 36,
+      "Johnson Inc": 35,
+      "Smith Inc": 34,
+      "Group Smith": 32,
+      "Smith LLC": 32
+    },
+    "top_insurance_providers": {
+      "Cigna": 11249,
+      "Medicare": 11154,
+      "UnitedHealthcare": 11125,
+      "Blue Cross": 11059,
+      "Aetna": 10913
+    }
+  }
+}

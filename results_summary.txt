@@ -1,0 +1,26 @@
+
+K-FOLD CROSS-VALIDATION BIOCLINICAL BERT RESULTS
+================================================
+
+Configuration:
+- Model: emilyalsentzer/Bio_ClinicalBERT
+- K-Folds: 5
+- Epochs per Fold: 15
+- Batch Size: 3
+- Learning Rate: 2e-05
+
+Hardware:
+- Device: cuda
+- GPU: Tesla T4
+
+Results:
+- Mean Accuracy: 0.6352 ± 0.0062
+- Mean F1-Score: 0.6379 ± 0.0052
+- Mean Precision: 0.6549 ± 0.0051
+- Mean Recall: 0.6352 ± 0.0062
+
+Training Performance:
+- Total Training Time: 8428.3 seconds (140.5 minutes)
+- Average Time per Fold: 1684.9 seconds
+
+Generated with BioClinical BERT for medical specialist prediction

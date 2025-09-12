@@ -1,0 +1,90 @@
+{
+  "generation_date": "2025-07-19T10:16:42.781038",
+  "total_letters_generated": 5000,
+  "unique_specialists": 16,
+  "condition_distribution": {
+    "Asthma": 824,
+    "Hypertension": 825,
+    "Arthritis": 835,
+    "Obesity": 828,
+    "Diabetes": 861,
+    "Cancer": 827
+  },
+  "specialist_distribution": {
+    "Internal Medicine": 377,
+    "Pulmonologist": 549,
+    "Cardiologist": 564,
+    "Rheumatologist": 544,
+    "Bariatric Specialist": 546,
+    "Endocrinologist": 713,
+    "Hematologist": 126,
+    "Nutritionist": 258,
+    "Oncologist": 558,
+    "Radiation Oncologist": 123,
+    "Cardiac Surgeon": 116,
+    "Geriatrician": 98,
+    "Orthopedic Surgeon": 121,
+    "Allergist": 140,
+    "Physical Medicine": 150,
+    "Geriatric Psychiatrist": 17
+  },
+  "age_statistics": {
+    "mean": 51.3046,
+    "std": 18.77093015383095,
+    "min": 18,
+    "max": 100
+  },
+  "gender_distribution": {
+    "Female": 2510,
+    "Male": 2490
+  },
+  "letter_length_statistics": {
+    "mean": 581.9536,
+    "std": 143.35679072523908,
+    "min": 198,
+    "max": 1576
+  },
+  "condition_specialist_mapping": {
+    "Asthma": {
+      "Internal Medicine": 118,
+      "Pulmonologist": 549,
+      "Allergist": 140,
+      "Geriatrician": 17
+    },
+    "Hypertension": {
+      "Cardiologist": 564,
+      "Cardiac Surgeon": 116,
+      "Internal Medicine": 125,
+      "Geriatrician": 15,
+      "Geriatric Psychiatrist": 5
+    },
+    "Arthritis": {
+      "Rheumatologist": 544,
+      "Geriatrician": 19,
+      "Orthopedic Surgeon": 121,
+      "Physical Medicine": 150,
+      "Geriatric Psychiatrist": 1
+    },
+    "Obesity": {
+      "Bariatric Specialist": 546,
+      "Endocrinologist": 138,
+      "Nutritionist": 129,
+      "Geriatrician": 12,
+      "Geriatric Psychiatrist": 3
+    },
+    "Diabetes": {
+      "Endocrinologist": 575,
+      "Internal Medicine": 134,
+      "Nutritionist": 129,
+      "Geriatrician": 22,
+      "Geriatric Psychiatrist": 1
+    },
+    "Cancer": {
+      "Hematologist": 126,
+      "Oncologist": 558,
+      "Radiation Oncologist": 123,
+      "Geriatric Psychiatrist": 7,
+      "Geriatrician": 13
+    }
+  }
+}
